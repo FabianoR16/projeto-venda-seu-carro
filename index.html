@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>form</title>
+</head>
+
+<body>
+<form action="register.php" method="get">
+    <!-- 
+    FORMULARIO DE NOME -->
+    <div class="nome">
+
+            <label for="name">Nome: </label>
+            <input type="text" name="name">
+
+    </div>
+    <!-- FORMULARIO DE TEXTO -->
+    <div>
+            <label for="text">Texto</label>
+            <input type="text" name="text">
+
+
+    </div>
+
+    <!-- FORMULARIO DE SELECT -->
+    <div class="profissao">
+
+            <label for="profissao" class="profissao">Selecione sua profissao</label>
+            <select name="profissao" class="select-p">
+                <option value="frontend" class="select-p">Front-End</option>
+                <option value="backend" class="select-p">Back-End</option>
+                <option value="fullstack" class="select-p">Fullstack</option>
+            </select>
+
+    </div>
+    <!-- FORM DE MULTIPLAOPÇÔES -->
+    <div>
+
+            <label for="multipla">Escolha a fruta</label>
+            <select name="multipla" multiple>
+                <option value="goiaba">Goiaba</option>
+                <option value="banana">Banana</option>
+                <option value="manga">Manga</option>
+            </select>
+
+    </div>
+
+    <!-- TEXTAREA -->
+    <div>
+        <label for="bio">Descreva mais sobre voce: </label>
+        <textarea name="bio"></textarea>
+    </div>
+
+    <!-- FIELDSET E LEGEND  -->
+    <fieldset>
+        <legend>Preeencha com seus dados</legend>
+        <label for="name">Nome:</label>
+        <input type="text" name="name">
+        <label for="lastname">Sobrenome:</label>
+        <input type="text" name="lastname">
+    </fieldset>
+
+    <!-- DATALIST -->
+     <div>
+        <label for="sabor">Escolha o sabor</label>
+        <input type="text" name="sabor" list="sabores">
+
+        <datalist id="sabores">
+            <option value="Chocolate"></option>
+            <option value="Coco"></option>
+            <option value="Morango"></option>
+        </datalist>
+     </div>
+
+     <!-- SENHA -->
+      <label for="usuario">Usuario</label>
+      <input type="text" name="usuario">
+      <label for="senha">Senha</label>
+      <input type="password" name="senha">
+
+
+     <!-- RADIO  -->
+      <div>
+        <label for="motor">Escolha o motor</label>
+        <div class="radio">
+            <input type="radio" value="1.0" name="motor">
+            <label for="1.0">1.0</label>
+        </div>
+                <div class="radio">
+            <input type="radio" value="1.5" name="motor">
+            <label for="1.5">1.5</label>
+        </div>
+                <div class="radio">
+            <input type="radio" value="2.0" name="motor">
+            <label for="2.0">2.0</label>
+        </div>
+      </div>
+
+      <!-- RESETAR FORM -->
+       <input type="reset" value="limpar">
+
+    <!-- BOTAO DE ENVIAR O FORM -->
+    <input type="submit" value="enviar" class="enviarf">
+</form>
+</body>
+
+</html>

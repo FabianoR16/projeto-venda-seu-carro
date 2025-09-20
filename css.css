@@ -1,0 +1,24 @@
+.nome {
+    display: block;
+    margin-bottom: 10px;
+}
+
+div {
+    display: block;
+    margin-top: 10px;
+}
+
+div input,
+div label {
+    display: block;
+}
+
+.radio label
+.radio span   
+.radio input{
+    display: inline-block;
+}
+
+.enviarf {
+    margin-top: 10px;
+}
